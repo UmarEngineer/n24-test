@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contaiener{
+    max-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
