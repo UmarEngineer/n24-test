@@ -48,6 +48,12 @@ window.addEventListener('resize', () => {
     
 })
 
+if(window.screen.availWidth < 590){
+    navBottom.appendChild(navTopRight)
+    navTopRight.style.justifyContent = 'center'
+    navTopRight.style.paddingTop = '20px'  
+}
+
 
 
 
