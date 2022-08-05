@@ -98,6 +98,7 @@ nav{
     background-color:  #DCE6FF;
     border-radius: 39px;
     font-size: 13px;
+    cursor: pointer;
 }
 .lang-change div{
     display: flex;
@@ -158,8 +159,8 @@ nav{
 
 .add{
     border-radius: 8px;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .main-new__items {
@@ -212,9 +213,18 @@ nav{
         padding-bottom: 10px;
     }
 
+    .hero{
+        max-width: 1200px;
+    }
+
     .main-new__items{
         grid-template-columns: 1fr 1fr;
         column-gap: 40px;
+    }
+
+    .add{
+        max-width: 100px;
+        transform: scale(0.7);
     }
 }
 
@@ -250,6 +260,12 @@ nav{
     .searchInput::placeholder{
         width: 30px;
         font-size: 18px;
+    }
+
+    .add{
+        transform: scaleY(0.6);
+        transform: scaleX(0.5);
+        margin-left: -20px;
     }
 
     .main-new__items{
@@ -308,9 +324,24 @@ nav{
         padding-left: 0;
       }
 
+      .add{
+        transform: scale(0.38);
+        transform: scaleX(0.36);
+        margin-left: -20px;
+      }
+
+
 
 }
 
+@media screen and (max-width: 500px) {
+    .add{
+        transform: scale(0.3);
+        margin-bottom: -30px;
+        margin-top: -30px;
+    }
+
+}
 @media screen and (max-width: 420px) {
     .container{
         padding-left: 20px;
@@ -332,10 +363,14 @@ nav{
         margin-top: -50px;
     }
 
+    .add{
+        margin-left: -200px;
+    }
+
 }
 @media screen and (max-width: 336px) {
     .nav-top{
-        padding-right: 0;
+        padding-right: 10px;
     }
 
     .nav-top__left{
@@ -353,6 +388,12 @@ nav{
 
     .main-new__item:not(:first-child) {
         margin-top: -100px;
+    }
+
+    .add{
+        transform: scale(0.2);
+        margin-left: -150px;
+        margin-bottom: -100px;
     }
 }
 
