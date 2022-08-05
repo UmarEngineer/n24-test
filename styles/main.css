@@ -106,17 +106,17 @@ nav{
     align-items: center;
 }
 .uz-lang{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-.ru-lang{
     color: #a6a6a6;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #DCE6FF;
+}
+.ru-lang{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
 .sign{
@@ -158,9 +158,12 @@ nav{
 }
 
 .add{
+    max-width: 1200px;
+    min-height: 126px;
     border-radius: 8px;
     margin-top: 40px;
     margin-bottom: 50px;
+    background-image: url(../images/reklama/shopME.png);
 }
 
 .main-new__items {
@@ -200,6 +203,38 @@ nav{
     color: #5E5F61;
 }
 
+.turnOn-news{
+    background-image: url(../images/reklama/Group\ 35\ 1.png);
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    margin: 60px auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.turnOn-text{
+    max-width: 404px;
+    margin-left: 29px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.turnOn-button{
+    min-width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f78b3b;
+    color: white;
+    margin-right: 70px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
 
 
 @media screen and (max-width:1200px) {
@@ -222,10 +257,6 @@ nav{
         column-gap: 40px;
     }
 
-    .add{
-        max-width: 100px;
-        transform: scale(0.7);
-    }
 }
 
 @media screen and (max-width:1100px) {
@@ -243,16 +274,11 @@ nav{
         padding-right: 50px;
     }
     
-    .nav-top{
+    .nav-top, .nav-items{
         padding-left: 40px;
         padding-right: 40px;
     }
 
-    .nav-items{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    
     .currency{
         display: none;
     }
@@ -262,15 +288,14 @@ nav{
         font-size: 18px;
     }
 
-    .add{
-        transform: scaleY(0.6);
-        transform: scaleX(0.5);
-        margin-left: -20px;
-    }
-
     .main-new__items{
         grid-template-columns: 1fr;
         row-gap: 20px;
+    }
+
+    .add{
+        background-size: contain;
+        min-height: 63px;
     }
 }
 
@@ -325,23 +350,24 @@ nav{
       }
 
       .add{
-        transform: scale(0.38);
-        transform: scaleX(0.36);
-        margin-left: -20px;
+        min-height: 50px;
+      }
+
+      .turnOn-news{
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        row-gap: 20px;
+        text-align: center;
+      }
+      .turnOn-text, .turnOn-button{
+        margin: 0;
       }
 
 
 
 }
 
-@media screen and (max-width: 500px) {
-    .add{
-        transform: scale(0.3);
-        margin-bottom: -30px;
-        margin-top: -30px;
-    }
-
-}
 @media screen and (max-width: 420px) {
     .container{
         padding-left: 20px;
@@ -352,7 +378,6 @@ nav{
         row-gap: 0;
         justify-content: center;
         justify-items: center;
-        max-width: 30px;
     }
     
     .main-new__item{
@@ -362,9 +387,16 @@ nav{
     .main-new__item:not(:first-child) {
         margin-top: -50px;
     }
-
+    
     .add{
-        margin-left: -200px;
+        margin-bottom: -10px;
+        min-height: 40px ;
+        transform: scale(0.8);
+    }
+
+    .turnOn-news{
+        margin-top: -30px;
+        transform: scale(0.8);
     }
 
 }
@@ -382,8 +414,8 @@ nav{
         transform: scale(0.7);
     }
 
-    .main-new__items:first-child{
-        margin-top: -20px;
+    .main-new__item:first-child{
+        margin-top: -30px;
     }
 
     .main-new__item:not(:first-child) {
@@ -391,9 +423,11 @@ nav{
     }
 
     .add{
-        transform: scale(0.2);
-        margin-left: -150px;
-        margin-bottom: -100px;
+        transform: scale(0.7);
+    }
+
+    .turnOn-news{
+        transform: scale(0.7);
     }
 }
 
