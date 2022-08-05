@@ -13,7 +13,11 @@
     padding-left: 120px;
     padding-right: 120px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
+
+/* NAVBAR SECTION STYLES */
 
 nav{
     max-width: 1440px;
@@ -146,6 +150,55 @@ nav{
     margin: 0 auto;
 }
 
+/* HERO SECTION STYLES */
+
+.hero{
+    margin: 0 auto;
+}
+
+.add{
+    border-radius: 8px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.main-new__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.main-new__item {
+    padding: 20px 17px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.new-item__head {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+.new-item__description {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+    color: #4A4B4C;
+    padding-bottom: 15px;
+}
+.new-item__link {
+    display: flex;
+    column-gap: 10px;
+    padding-top: 10px;
+    align-items: center;
+}
+.item-link__text {
+    font-size: 12px;
+    color: #5E5F61;
+}
+
 
 
 @media screen and (max-width:1200px) {
@@ -157,6 +210,11 @@ nav{
     }
     .nav-item{
         padding-bottom: 10px;
+    }
+
+    .main-new__items{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
     }
 }
 
@@ -170,6 +228,11 @@ nav{
 }
 
 @media screen and (max-width: 886px) {
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
     .nav-top{
         padding-left: 40px;
         padding-right: 40px;
@@ -187,6 +250,11 @@ nav{
     .searchInput::placeholder{
         width: 30px;
         font-size: 18px;
+    }
+
+    .main-new__items{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
     }
 }
 
@@ -240,8 +308,31 @@ nav{
         padding-left: 0;
       }
 
+
 }
 
+@media screen and (max-width: 420px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .main-new__items{
+        row-gap: 0;
+        justify-content: center;
+        justify-items: center;
+        max-width: 30px;
+    }
+    
+    .main-new__item{
+        transform: scale(0.8);
+    }
+
+    .main-new__item:not(:first-child) {
+        margin-top: -50px;
+    }
+
+}
 @media screen and (max-width: 336px) {
     .nav-top{
         padding-right: 0;
@@ -249,6 +340,19 @@ nav{
 
     .nav-top__left{
         width: 80%;
+    }
+ 
+
+    .main-new__item{
+        transform: scale(0.7);
+    }
+
+    .main-new__items:first-child{
+        margin-top: -20px;
+    }
+
+    .main-new__item:not(:first-child) {
+        margin-top: -100px;
     }
 }
 

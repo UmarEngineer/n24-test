@@ -1,6 +1,7 @@
 
 const searchInput = document.querySelector('.searchInput');
 const search = document.querySelector('.search');
+const searchIcon = document.querySelector('.searchIcon');
 const langChange = document.querySelector('.lang-change');
 const sign = document.querySelector('.sign');
 const navItems = document.querySelector('.nav-items');
@@ -15,6 +16,7 @@ if (window.screen.availWidth < 1100){
     search.addEventListener('click', () => {
         searchInput.style.width = '235px'
         searchInput.focus()
+        searchIcon.style.display = 'none'
         langChange.style.display = 'none'
         sign.style.display = 'none'
     })
@@ -23,6 +25,7 @@ if (window.screen.availWidth < 1100){
         searchInput.style.width = '50px'
         langChange.style.display = 'flex'
         sign.style.display = 'flex'
+        searchIcon.style.display = 'block'
     })
 }
 
