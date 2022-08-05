@@ -74,6 +74,16 @@ nav{
 .search input::placeholder{
     color: #8D8D8D;
 }
+.search{
+    position: relative;
+}
+
+.searchIcon{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    z-index: 1;
+}
 .lang-change{
     display: flex;
     align-items: center;

@@ -1,5 +1,6 @@
 
 const searchInput = document.querySelector('.searchInput');
+const search = document.querySelector('.search');
 const langChange = document.querySelector('.lang-change');
 const sign = document.querySelector('.sign');
 const navItems = document.querySelector('.nav-items');
@@ -9,17 +10,21 @@ const navTopRight = document.querySelector('.nav-top__right');
 const navTopLeft = document.querySelector('.nav-top__left');
 const hamburgerIcon = document.querySelector('.hamburgerIcon');
 
-searchInput.addEventListener('focus', () => {
-    searchInput.style.width = '235px'
-    langChange.style.display = 'none'
-    sign.style.display = 'none'
-})
-
-searchInput.addEventListener('blur', () => {
-    searchInput.style.width = '50px'
-    langChange.style.display = 'flex'
-    sign.style.display = 'flex'
-})
+console.log(screen.availWidth);
+if (window.screen.availWidth < 1100){
+    search.addEventListener('click', () => {
+        searchInput.style.width = '235px'
+        searchInput.focus()
+        langChange.style.display = 'none'
+        sign.style.display = 'none'
+    })
+    
+    searchInput.addEventListener('blur', () => {
+        searchInput.style.width = '50px'
+        langChange.style.display = 'flex'
+        sign.style.display = 'flex'
+    })
+}
 
 function changeIcon(x) {
     x.classList.toggle("change");
@@ -37,7 +42,9 @@ window.addEventListener('resize', () => {
         navTop.appendChild(navTopRight)
         navTop.appendChild(hamburgerIcon)
     }
-
+    
 })
+
+
 
 
