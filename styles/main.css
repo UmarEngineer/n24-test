@@ -17,6 +17,7 @@
 
 nav{
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 .nav-top{
@@ -27,7 +28,7 @@ nav{
     padding-bottom: 38px;
     height: 105px;
     background-color: #F6F6F6;
-    min-width: 1440px;
+    max-width: 1440px;
     padding-left: 120px;
     padding-right: 120px;
 }
@@ -50,6 +51,10 @@ nav{
 }
 .currencyText{
     color: #555555;
+}
+
+.hamburgerIcon{
+    display: none;
 }
 
 .nav-top__right{
@@ -104,7 +109,10 @@ nav{
     border: none;
     background-color: #7296EC;
     border-radius: 10px;
+}
+.sign a{
     color: #fff;
+    text-decoration: none;
 }
 
 .nav-items{
@@ -127,3 +135,112 @@ nav{
     border: 1px solid #D1D1D1;
     margin: 0 auto;
 }
+
+
+
+@media screen and (max-width:1200px) {
+    .nav-items{
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .nav-item{
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .search input{
+        width: 50px;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 886px) {
+    .nav-top{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .nav-items{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .currency{
+        display: none;
+    }
+
+    .searchInput::placeholder{
+        width: 30px;
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .nav-items{
+        display: none;
+    }
+    .line{
+        margin-top: 20px;
+    }
+
+    .hamburgerIcon {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .line1, .line2, .line3 {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 10px;
+        transition: 0.4s;
+      }
+
+      .change .line1 {
+        -webkit-transform: rotate(-45deg) translate(-4px, 8px) ;
+        transform: rotate(-45deg) translate(-4px, 8px) ;
+      }
+      
+      .change .line2 {
+        opacity: 0;
+      }
+      
+      .change .line3 {
+        -webkit-transform: rotate(45deg) translate(-4px, -9px) ;
+        transform: rotate(45deg) translate(-4px, -9px) ;
+      }
+
+      .active {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-top__left img{
+        transform: scale(0.7);
+      }
+
+      .nav-top{
+        padding-left: 0;
+      }
+
+}
+
+@media screen and (max-width: 336px) {
+    .nav-top{
+        padding-right: 0;
+    }
+
+    .nav-top__left{
+        width: 80%;
+    }
+}
+
+
+
