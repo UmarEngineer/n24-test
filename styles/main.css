@@ -6,8 +6,124 @@
     font-family: 'Rubik', sans-serif;
 }
 
-.contaiener{
+
+.container{
     max-width: 1440px;
+    width: 100%;
     padding-left: 120px;
     padding-right: 120px;
+    margin: 0 auto;
+}
+
+nav{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    height: 105px;
+    background-color: #F6F6F6;
+    min-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.nav-top__left{
+    display: flex;
+}
+
+.currency{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.currency > div{
+    margin-right: 25px;
+}
+.currencyIcon{
+    color: #2959CE;
+    font-weight: 700;
+}
+.currencyText{
+    color: #555555;
+}
+
+.nav-top__right{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    width: 275px;
+    height: 45px;
+    border-radius: 60px;
+    border: none;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #8D8D8D;
+}
+.search input::placeholder{
+    color: #8D8D8D;
+}
+.lang-change{
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+    width: 70px;
+    height: 36px;
+    justify-content: space-around;
+    background-color:  #DCE6FF;
+    border-radius: 39px;
+    font-size: 13px;
+}
+.lang-change div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uz-lang{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.ru-lang{
+    color: #a6a6a6;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #DCE6FF;
+}
+
+.sign{
+    padding: 13px 20px;
+    border: none;
+    background-color: #7296EC;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    padding: 30px 120px 20px;
+    justify-content: space-between;
+}
+
+.nav-item a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #7F7F7F;
+    font-weight: 500;
+}
+.line{
+    max-width: 1200px;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #D1D1D1;
+    margin: 0 auto;
 }
