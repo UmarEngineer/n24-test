@@ -170,6 +170,7 @@ main{
 
 .main-new__items {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
@@ -434,6 +435,19 @@ main{
     display: none;
 }
 
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    /* border-top: 1px solid #333; */
+    box-shadow: -1px 0 2px #333;
+}
+
+.active-link{
+    fill: #2959CE;
+}
+
 
 @media screen and (max-width:1200px) {
     .nav-items{
@@ -531,11 +545,12 @@ main{
     .hamburgerIcon {
         display: inline-block;
         cursor: pointer;
+        margin-top: 15px;
       }
       
       .line1, .line2, .line3 {
         width: 30px;
-        height: 3px;
+        height: 2.5px;
         background-color: #333;
         margin: 6px 10px;
         transition: 0.4s;
@@ -623,7 +638,11 @@ main{
 
 
 }
-
+@media screen and (max-width: 580px) {
+    .hamburgerIcon{
+        margin-top: 0;
+    }
+}
 @media screen and (max-width: 420px) {
     .container{
         padding-left: 20px;
@@ -685,6 +704,8 @@ main{
     .footer{
         display: none;
     }
+
+    
 
 }
 @media screen and (max-width: 336px) {
