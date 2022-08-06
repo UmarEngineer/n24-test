@@ -16,7 +16,6 @@ if (window.screen.availWidth < 1100){
     search.addEventListener('click', () => {
         searchInput.style.width = '235px'
         searchInput.focus()
-        searchIcon.style.display = 'none'
         langChange.style.display = 'none'
         sign.style.display = 'none'
     })
@@ -25,9 +24,15 @@ if (window.screen.availWidth < 1100){
         searchInput.style.width = '50px'
         langChange.style.display = 'flex'
         sign.style.display = 'flex'
-        searchIcon.style.display = 'block'
     })
 }
+
+searchInput.addEventListener('input', () => {
+    searchIcon.style.display = 'none'
+    if(searchInput.value == ''){
+        searchIcon.style.display = 'block'
+    }
+})
 
 function changeIcon(x) {
     x.classList.toggle("change");
