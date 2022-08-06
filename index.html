@@ -1,492 +1,723 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <!-- FONT FAMILY LINKS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS LINKS -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <title>N24 - YANGILIKLAR </title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>N24 - YANGILIKLAR</title>
+  </head>
+
+  <body>
     <nav>
-        <div class="nav-top">
-            <div class="nav-top__left">
-                <img src="images/logo/NAMANGANLIKLAR24.png" srcset="images/logo/NAMANGANLIKLAR24.png 1x, images/logo/NAMANGANLIKLAR24@2x.png 2x"  alt="NAMANGANLIKLAR logo" />
-                <div class="currency">
-                    <div>
-                        <span class="currencyIcon">$</span>
-                        <span class="currencyText">10137.2</span>
-                    </div>
-                    <div>
-                        <span class="currencyIcon">P</span>
-                        <span class="currencyText">138.26</span>
-                    </div>
-                </div>
+      <div class="nav-top">
+        <div class="nav-top__left">
+          <img
+            src="images/logo/NAMANGANLIKLAR24.png"
+            srcset="
+              images/logo/NAMANGANLIKLAR24.png 1x,
+              images/logo/NAMANGANLIKLAR24@2x.png 2x
+            "
+            alt="NAMANGANLIKLAR logo"
+          />
+          <div class="currency">
+            <div>
+              <span class="currencyIcon">$</span>
+              <span class="currencyText">10137.2</span>
             </div>
-            <div class="nav-top__right">
-                <div class="search">
-                    <img class="searchIcon" src="images/icons/search.png" srcset="images/icons/search.png 1x, images/icons/search@2x.png 2x" alt="Search Icon">
-                    <input type="text" placeholder="         Поиск" class="searchInput">
-                </div>
-                <div class="lang-change">
-                    <div class="uz-lang">УЗ</div>
-                    <div class="ru-lang">РУ</div>
-                </div>
-                <button class="sign">
-                    <a href="#">
-                        Войти
-                    </a>
-                </button>
+            <div>
+              <span class="currencyIcon">P</span>
+              <span class="currencyText">138.26</span>
             </div>
-            <div class="hamburgerIcon" onclick="changeIcon(this)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
+          </div>
         </div>
-        <div class="nav-bottom">
-            <ul class="nav-items">
-                <li class="nav-item">
-                    <a href="index.html">
-                        Главное
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        Интересно
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        Экономика
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        Общество
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        Технология
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        Спорт
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        Культура
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        Происшествия
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        Наука
-                    </a>
-                </li>
-            </ul>
+        <div class="nav-top__right">
+          <div class="search">
+            <img
+              class="searchIcon"
+              src="images/icons/search.png"
+              srcset="images/icons/search.png 1x, images/icons/search@2x.png 2x"
+              alt="Search Icon"
+            />
+            <input
+              type="text"
+              placeholder="         Поиск"
+              class="searchInput"
+            />
+          </div>
+          <div class="lang-change">
+            <div class="uz-lang">УЗ</div>
+            <div class="ru-lang">РУ</div>
+          </div>
+          <button class="sign">
+            Войти
+          </button>
         </div>
-        <div class="line"></div>
+        <div class="hamburgerIcon" onclick="changeIcon(this)">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+      <div class="nav-bottom">
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="index.html"> Главное </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Интересно </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Экономика </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Общество </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Технология </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Спорт </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Культура </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Происшествия </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Наука </a>
+          </li>
+        </ul>
+      </div>
+      <div class="line"></div>
     </nav>
+
     <div class="container">
+      <main>
+        <section class="hero" id="hero">
+          <div class="add"></div>
 
-        <main>
-            <section class="hero" id="hero">
-                <div class="add">
+          <div class="main-new-items">
+            <div class="main-new-item">
+              <h3 class="new-item-head">
+                Кандидат на пост канцлера ФРГ Шольц назвал условия коалиционного
+                соглашения
+              </h3>
+              <p class="new-item-description">
+                Лидер Социал-демократической партии Германии (СДПГ) и кандидат
+                на должность...
+              </p>
+              <div class="new-item-img">
+                <img
+                  src="images/newsImg/main-news/germany.png"
+                  srcset="
+                    images/newsImg/main-news/germany.png    1x,
+                    images/newsImg/main-news/germany@2x.png 2x
+                  "
+                  width="365"
+                  height="165"
+                  alt="Germany Flag"
+                />
+              </div>
+              <div class="new-item-link">
+                <div class="item-link-icon">
+                  <img
+                    src="images/icons/main-news/kb.png"
+                    srcset="
+                      images/icons/main-news/kb.png    1x,
+                      images/icons/main-news/kb@2x.png 2x
+                    "
+                    alt="KB logo"
+                  />
                 </div>
+                <div class="item-link-text">
+                  ИА Красная Весна <span class="time">15:55</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-new-item">
+              <h3 class="new-item-head">
+                Ученые доказали экспериментальным путем пользу покровных культур
+              </h3>
+              <p class="new-item-description">
+                Новое исследование ученых университета Иллинойса объединяет
+                полевые данные...
+              </p>
+              <div class="new-item-img">
+                <img
+                  src="images/newsImg/main-news/bugdoy.png"
+                  srcset="
+                    images/newsImg/main-news/bugdoy.png    1x,
+                    images/newsImg/main-news/bugdoy@2x.png 2x
+                  "
+                  width="365"
+                  height="165"
+                  alt="Germany Flag"
+                />
+              </div>
+              <div class="new-item-link">
+                <div class="item-link-icon">
+                  <img
+                    src="images/icons/main-news/g.png"
+                    srcset="
+                      images/icons/main-news/g.png    1x,
+                      images/icons/main-news/g@2x.png 2x
+                    "
+                    alt="KB logo"
+                  />
+                </div>
+                <div class="item-link-text">
+                  Газета.Ru <span class="time">12:54</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-new-item">
+              <h3 class="new-item-head">
+                Baidu запустила публичный сервис роботакси Apollo Go в Шанхае
+              </h3>
+              <p class="new-item-description">
+                Автопарк Baidu состоит из модифицированных электромобилей EV...
+              </p>
+              <div class="new-item-img">
+                <img
+                  src="images/newsImg/main-news/apollo-car.png"
+                  srcset="
+                    images/newsImg/main-news/apollo-car.png    1x,
+                    images/newsImg/main-news/apollo-car@2x.png 2x
+                  "
+                  width="365"
+                  height="165"
+                  alt="Germany Flag"
+                />
+              </div>
+              <div class="new-item-link">
+                <div class="item-link-icon">
+                  <img
+                    src="images/icons/main-news/x+.png"
+                    srcset="
+                      images/icons/main-news/x+.png    1x,
+                      images/icons/main-news/x+@2x.png 2x
+                    "
+                    alt="KB logo"
+                  />
+                </div>
+                <div class="item-link-text">
+                  Хайтек+ <span class="time">13:44</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-new-item">
+              <h3 class="new-item-head">
+                Стали известны ёмкости аккумуляторов всех моделей iPhone 13
+              </h3>
+              <p class="new-item-description">
+                Во время презентации iPhone 13 Apple придала большое значения...
+              </p>
+              <div class="new-item-img">
+                <img
+                  src="images/newsImg/main-news/iPhone13.png"
+                  srcset="
+                    images/newsImg/main-news/iPhone13.png    1x,
+                    images/newsImg/main-news/iPhone13@2x.png 2x
+                  "
+                  width="365"
+                  height="165"
+                  alt="Germany Flag"
+                />
+              </div>
+              <div class="new-item-link">
+                <div class="item-link-icon">
+                  <img
+                    src="images/icons/main-news/d.png"
+                    srcset="
+                      images/icons/main-news/d.png    1x,
+                      images/icons/main-news/d@2x.png 2x
+                    "
+                    alt="KB logo"
+                  />
+                </div>
+                <div class="item-link-text">
+                  Digger.ru <span class="time">14:25</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-new-item">
+              <h3 class="new-item-head">
+                Nature: ученые смогли доказать природное происхождение
+                коронавируса SARS-CoV-2
+              </h3>
+              <p class="new-item-description">
+                Во время презентации iPhone 13 Apple придала большое значение...
+              </p>
+              <div class="new-item-img">
+                <img
+                  src="images/newsImg/main-news/labaratory.png"
+                  srcset="
+                    images/newsImg/main-news/labaratory.png    1x,
+                    images/newsImg/main-news/labaratory@2x.png 2x
+                  "
+                  width="365"
+                  height="165"
+                  alt="Germany Flag"
+                />
+              </div>
+              <div class="new-item-link">
+                <div class="item-link-icon">
+                  <img
+                    src="images/icons/main-news/l.png"
+                    srcset="
+                      images/icons/main-news/l.png    1x,
+                      images/icons/main-news/l@2x.png 2x
+                    "
+                    alt="KB logo"
+                  />
+                </div>
+                <div class="item-link-text">
+                  Lenta.ru <span class="time">10:54</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-new-item">
+              <div class="new-item-text">
+                <h3 class="new-item-head">
+                  Китайская марка JAC повысила цены на лифтбек и пикап в России
+                </h3>
+                <p class="new-item-description">
+                  Две модели китайского бренда JAC из пяти, представленных на
+                  российском...
+                </p>
+              </div>
+              <div class="new-item-img">
+                <div class="new-item-img">
+                  <img
+                    src="images/newsImg/main-news/blackCar.png"
+                    srcset="
+                      images/newsImg/main-news/blackCar.png    1x,
+                      images/newsImg/main-news/blackCar@2x.png 2x
+                    "
+                    width="365"
+                    height="165"
+                    alt="Germany Flag"
+                  />
+                </div>
+                <div class="new-item-link">
+                  <div class="item-link-icon">
+                    <img
+                      src="images/icons/main-news/tapantac.png"
+                      srcset="
+                        images/icons/main-news/tapantac.png    1x,
+                        images/icons/main-news/tapantac@2x.png 2x
+                      "
+                      alt="KB logo"
+                    />
+                  </div>
+                  <div class="item-link-text">
+                    Тарантас Ньюс <span class="time">10:44</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <div class="main-new__items">
-                    <div class="main-new__item">
-                        <h3 class="new-item__head">Кандидат на пост канцлера ФРГ Шольц назвал условия коалиционного соглашения</h3>
-                        <p class="new-item__description">
-                            Лидер Социал-демократической партии Германии (СДПГ) и кандидат на должность...
-                        </p>
-                        <div class="new-item__img">
-                            <img src="images/newsImg/main-news/germany.png" srcset="images/newsImg/main-news/germany.png 1x, images/newsImg/main-news/germany@2x.png 2x" width="365" height="165" alt="Germany Flag">
-                        </div>
-                        <div class="new-item__link">
-                            <div class="item-link__icon">
-                                <img src="images/icons/main-news/kb.png" srcset="images/icons/main-news/kb.png 1x, images/icons/main-news/kb@2x.png 2x" alt="KB logo">
-                            </div>
-                            <div class="item-link__text">
-                                ИА Красная Весна <span class="time">15:55</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-new__item">
-                        <h3 class="new-item__head">Ученые доказали экспериментальным путем пользу покровных культур</h3>
-                        <p class="new-item__description">
-                            Новое исследование ученых университета Иллинойса объединяет полевые данные...                         </p>
-                        <div class="new-item__img">
-                            <img src="images/newsImg/main-news/bugdoy.png" srcset="images/newsImg/main-news/bugdoy.png 1x, images/newsImg/main-news/bugdoy@2x.png 2x" width="365" height="165" alt="Germany Flag">
-                        </div>
-                        <div class="new-item__link">
-                            <div class="item-link__icon">
-                                 <img src="images/icons/main-news/g.png" srcset="images/icons/main-news/g.png 1x, images/icons/main-news/g@2x.png 2x" alt="KB logo">
-                            </div>
-                            <div class="item-link__text">
-                                Газета.Ru  <span class="time">12:54</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-new__item">
-                        <h3 class="new-item__head">
-                            Baidu запустила публичный сервис роботакси Apollo Go в Шанхае                        </h3>
-                        <p class="new-item__description">
-                            Автопарк Baidu состоит из модифицированных электромобилей EV...                         </p>
-                        <div class="new-item__img">
-                            <img src="images/newsImg/main-news/apollo-car.png" srcset="images/newsImg/main-news/apollo-car.png 1x, images/newsImg/main-news/apollo-car@2x.png 2x" width="365" height="165" alt="Germany Flag">
-                        </div>
-                        <div class="new-item__link">
-                            <div class="item-link__icon">
-                                 <img src="images/icons/main-news/x+.png" srcset="images/icons/main-news/x+.png 1x, images/icons/main-news/x+@2x.png 2x" alt="KB logo">
-                            </div>
-                            <div class="item-link__text">
-                                Хайтек+ <span class="time">13:44</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-new__item">
-                        <h3 class="new-item__head">
-                            Стали известны ёмкости аккумуляторов всех моделей iPhone 13                        </h3>
-                        <p class="new-item__description">
-                            Во время презентации iPhone 13 Apple придала большое значения...                        </p>
-                        <div class="new-item__img">
-                            <img src="images/newsImg/main-news/iPhone13.png" srcset="images/newsImg/main-news/iPhone13.png 1x, images/newsImg/main-news/iPhone13@2x.png 2x" width="365" height="165" alt="Germany Flag">
-                        </div>
-                        <div class="new-item__link">
-                            <div class="item-link__icon">
-                                 <img src="images/icons/main-news/d.png" srcset="images/icons/main-news/d.png 1x, images/icons/main-news/d@2x.png 2x" alt="KB logo">
-                            </div>
-                            <div class="item-link__text">
-                                Digger.ru <span class="time">14:25</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-new__item">
-                        <h3 class="new-item__head">
-                            Nature: ученые смогли доказать природное происхождение коронавируса SARS-CoV-2                        </h3>
-                        <p class="new-item__description">
-                            Во время презентации iPhone 13 Apple придала большое значение...                        </p>
-                        <div class="new-item__img">
-                            <img src="images/newsImg/main-news/labaratory.png" srcset="images/newsImg/main-news/labaratory.png 1x, images/newsImg/main-news/labaratory@2x.png 2x" width="365" height="165" alt="Germany Flag">
-                        </div>
-                        <div class="new-item__link">
-                            <div class="item-link__icon">
-                                 <img src="images/icons/main-news/l.png" srcset="images/icons/main-news/l.png 1x, images/icons/main-news/l@2x.png 2x" alt="KB logo">
-                            </div>
-                            <div class="item-link__text">
-                                Lenta.ru <span class="time">10:54</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-new__item">
-                        <div class="new-item__text">
-                            <h3 class="new-item__head">
-                                Китайская марка JAC повысила цены на лифтбек и пикап в России   
-                            </h3>
-                            <p class="new-item__description">
-                                Две модели китайского бренда JAC из пяти, представленных на российском...                        
-                            </p>
-                        </div>
-                        <div class="new-item__img">
-                            <div class="new-item__img">
-                                <img src="images/newsImg/main-news/blackCar.png" srcset="images/newsImg/main-news/blackCar.png 1x, images/newsImg/main-news/blackCar@2x.png 2x" width="365" height="165" alt="Germany Flag">
-                            </div>
-                            <div class="new-item__link">
-                                <div class="item-link__icon">
-                                    <img src="images/icons/main-news/tapantac.png" srcset="images/icons/main-news/tapantac.png 1x, images/icons/main-news/tapantac@2x.png 2x" alt="KB logo">
-                                </div>
-                                <div class="item-link__text">
-                                    Тарантас Ньюс <span class="time">10:44</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="turnOn-news">
+          <div class="turnOn-text">
+            Хотите быть в курсе свежих новостей? Включите уведомления!
+          </div>
+          <button class="turnOn-button">Включит</button>
+        </div>
 
-            <div class="turnOn-news">
-                <div class="turnOn-text">
-                    Хотите быть в курсе свежих новостей?  Включите уведомления!
+        <section class="world-news" id="world-news">
+          <h1 class="section-header">В мире</h1>
+          <div class="secondary-news">
+            <div class="world-news-items">
+              <div class="world-news-item">
+                <div class="world-new-img">
+                  <img
+                    src="images/newsImg/dunyoda/plane.png"
+                    srcset="
+                      images/newsImg/dunyoda/plane.png    1x,
+                      images/newsImg/dunyoda/plane@2x.png 2x
+                    "
+                    alt="Plane"
+                  />
                 </div>
-                <button class="turnOn-button">
-                    Включит
-                </button>
+                <div class="world-new-text">
+                  <h3 class="new-item-head">
+                    Китайский Чунцин запустил чартерный рейс для студентов до
+                    Британии
+                  </h3>
+                  <p class="new-item-description">
+                    Чартерный рейс с 244 китайскими студентами вылетел из города
+                    центрального подчинения Чунцина на юго-западе Китая в
+                    британский Манчестер...
+                  </p>
+                  <div class="new-item-link">
+                    <div class="item-link-icon">
+                      <img
+                        src="images/icons/main-news/kb.png"
+                        srcset="
+                          images/icons/main-news/kb.png    1x,
+                          images/icons/main-news/kb@2x.png 2x
+                        "
+                        alt="KB logo"
+                      />
+                    </div>
+                    <div class="item-link-text">
+                      ИА Красная Весна <span class="time">15:55</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="world-news-item">
+                <div class="world-new-img">
+                  <img
+                    src="images/newsImg/dunyoda/angela.png"
+                    srcset="
+                      images/newsImg/dunyoda/angela.png    1x,
+                      images/newsImg/dunyoda/angela@2x.png 2x
+                    "
+                    width="210"
+                    height="165"
+                    alt="Angela Merkel"
+                  />
+                </div>
+                <div class="world-new-text">
+                  <h3 class="new-item-head">
+                    В Германии выпустят ограниченную партию плюшевых мишек в
+                    образе Меркель
+                  </h3>
+                  <p class="new-item-description">
+                    БЕРЛИН, 19 сентября. / ТАСС/. Знаменитая фабрика по
+                    производству плюшевых игрушек в городе Кобург (федеральная
+                    земля Бавария) изготовила уникального...
+                  </p>
+                  <div class="new-item-link">
+                    <div class="item-link-icon">
+                      <img
+                        src="images/icons/dunyoda/t.png"
+                        srcset="
+                          images/icons/dunyoda/t.png    1x,
+                          images/icons/dunyoda/t@2x.png 2x
+                        "
+                        alt="T logo"
+                      />
+                    </div>
+                    <div class="item-link-text">
+                      TACC <span class="time">11:06</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="world-news-item">
+                <div class="world-new-img">
+                  <img
+                    src="images/newsImg/dunyoda/chine.png"
+                    srcset="
+                      images/newsImg/dunyoda/chine.png    1x,
+                      images/newsImg/dunyoda/chine@2x.png 2x
+                    "
+                    width="210"
+                    height="165"
+                    alt="Chine town"
+                  />
+                </div>
+                <div class="world-new-text">
+                  <h3 class="new-item-head">
+                    Акции КНР утратили доверие инвесторов. Что делать с бумагами
+                    прямо сейчас
+                  </h3>
+                  <p class="new-item-description">
+                    За последние месяцы инвесторы в китайский рынок пережили
+                    настоящее потрясение — из-за ужесточения регулирования
+                    технологического сектора и критики некоторых...
+                  </p>
+                  <div class="new-item-link">
+                    <div class="item-link-icon">
+                      <img
+                        src="images/icons/dunyoda/grow.png"
+                        srcset="
+                          images/icons/dunyoda/grow.png    1x,
+                          images/icons/dunyoda/grow@2x.png 2x
+                        "
+                        alt="Grow logo"
+                      />
+                    </div>
+                    <div class="item-link-text">
+                      РБК Инвестиции <span class="time">09:35</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="world-news-item">
+                <div class="world-new-img">
+                  <img
+                    src="images/newsImg/dunyoda/turkey.png"
+                    srcset="
+                      images/newsImg/dunyoda/turkey.png    1x,
+                      images/newsImg/dunyoda/turkey@2x.png 2x
+                    "
+                    width="210"
+                    height="165"
+                    alt="Turkey Flag"
+                  />
+                </div>
+                <div class="world-new-text">
+                  <h3 class="new-item-head">
+                    Китай раскритиковал заключенный Австралией, США и
+                    Великобританией антикитайский союз AUKUS
+                  </h3>
+                  <p class="new-item-description">
+                    Не только Франция, которая лишилась многомиллиардного
+                    контракта с Австралий, осталась недовольна созданием
+                    трехстороннего оборонного альянса AUKUS, пишет
+                    Anna-News.info
+                  </p>
+                  <div class="new-item-link">
+                    <div class="item-link-icon">
+                      <img
+                        src="images/icons/dunyoda/yo.png"
+                        srcset="
+                          images/icons/dunyoda/yo.png    1x,
+                          images/icons/dunyoda/yo@2x.png 2x
+                        "
+                        alt="YO logo"
+                      />
+                    </div>
+                    <div class="item-link-text">
+                      Solenka.info <span class="time">19:43</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="view-more">Показать ещё</button>
             </div>
 
-            <section class="world-news" id="world-news">
-                <h1 class="section-header">В мире</h1>
-                <div class="secondary-news">
-                    <div class="world-news__items">
-                        <div class="world-news__item">
-                            <div class="world-new__img">
-                                <img src="images/newsImg/dunyoda/plane.png" srcset="images/newsImg/dunyoda/plane.png 1x, images/newsImg/dunyoda/plane@2x.png 2x" alt="Plane">
-                            </div>
-                            <div class="world-new__text">
-                                <h3 class="new-item__head">
-                                    Китайский Чунцин запустил чартерный рейс для студентов до Британии                            
-                                </h3>
-                                <p class="new-item__description">
-                                    Чартерный рейс с 244 китайскими студентами вылетел из города центрального подчинения Чунцина на юго-западе Китая в британский Манчестер...                            
-                                </p>
-                                <div class="new-item__link">
-                                    <div class="item-link__icon">
-                                        <img src="images/icons/main-news/kb.png" srcset="images/icons/main-news/kb.png 1x, images/icons/main-news/kb@2x.png 2x" alt="KB logo">
-                                    </div>
-                                    <div class="item-link__text">
-                                        ИА Красная Весна <span class="time">15:55</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="world-news__item">
-                            <div class="world-new__img">
-                                <img src="images/newsImg/dunyoda/angela.png" srcset="images/newsImg/dunyoda/angela.png 1x, images/newsImg/dunyoda/angela@2x.png 2x" width="210" height="165" alt="Angela Merkel">
-                            </div>
-                            <div class="world-new__text">
-                                <h3 class="new-item__head">
-                                    В Германии выпустят ограниченную партию плюшевых мишек в образе Меркель  
-                                </h3>                          
-                                <p class="new-item__description">
-                                    БЕРЛИН, 19 сентября. / ТАСС/. Знаменитая фабрика по производству плюшевых игрушек в городе Кобург (федеральная земля Бавария) изготовила уникального...                            
-                                </p>
-                                <div class="new-item__link">
-                                    <div class="item-link__icon">
-                                        <img src="images/icons/dunyoda/t.png" srcset="images/icons/dunyoda/t.png 1x, images/icons/dunyoda/t@2x.png 2x" alt="T logo">
-                                    </div>
-                                    <div class="item-link__text">
-                                        TACC <span class="time">11:06</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="world-news__item">
-                            <div class="world-new__img">
-                                <img src="images/newsImg/dunyoda/chine.png" srcset="images/newsImg/dunyoda/chine.png 1x, images/newsImg/dunyoda/chine@2x.png 2x" width="210" height="165" alt="Chine town">
-                            </div>
-                            <div class="world-new__text">
-                                <h3 class="new-item__head">
-                                    Акции КНР утратили доверие инвесторов. Что делать с бумагами прямо сейчас
-                                </h3>                            
-                                <p class="new-item__description">
-                                    За последние месяцы инвесторы в китайский рынок пережили настоящее потрясение — из-за ужесточения регулирования технологического сектора и критики некоторых...                            
-                                </p>
-                                <div class="new-item__link">
-                                    <div class="item-link__icon">
-                                        <img src="images/icons/dunyoda/grow.png" srcset="images/icons/dunyoda/grow.png 1x, images/icons/dunyoda/grow@2x.png 2x" alt="Grow logo">
-                                    </div>
-                                    <div class="item-link__text">
-                                        РБК Инвестиции <span class="time">09:35</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="world-news__item">
-                            <div class="world-new__img">
-                                <img src="images/newsImg/dunyoda/turkey.png" srcset="images/newsImg/dunyoda/turkey.png 1x, images/newsImg/dunyoda/turkey@2x.png 2x" width="210" height="165" alt="Turkey Flag">
-                            </div>
-                            <div class="world-new__text">
-                                <h3 class="new-item__head">
-                                    Китай раскритиковал заключенный Австралией, США и Великобританией антикитайский союз AUKUS 
-                                </h3>                           
-                                <p class="new-item__description">
-                                    Не только Франция, которая лишилась многомиллиардного контракта с Австралий, осталась недовольна созданием трехстороннего оборонного альянса AUKUS, пишет Anna-News.info                            
-                                </p>
-                                <div class="new-item__link">
-                                    <div class="item-link__icon">
-                                        <img src="images/icons/dunyoda/yo.png" srcset="images/icons/dunyoda/yo.png 1x, images/icons/dunyoda/yo@2x.png 2x" alt="YO logo">
-                                    </div>
-                                    <div class="item-link__text">
-                                        Solenka.info  <span class="time">19:43</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="view-more">Показать ещё</button>
-                    </div>
-    
-                    <div class="glavnoe">
-                        <div class="glavnoe-items">
-                            <h2 class="section-header__glavnoe">Главное</h2>
-                            <div class="glavnoe-item">
-                                <h4 class="glavnoe-item__header">
-                                    В Фергане создадут узбекско-пакистанский университет
-                                </h4>
-                                <div class="glavnoe-item__description">
-                                    Sputnik Узбекистан 14:09
-                                </div>
-                            </div>
-                            <div class="line-sm"></div>
-                            <div class="glavnoe-item">
-                                <h4 class="glavnoe-item__header">
-                                    Узбекистан утвердил соглашение о содействии занятости в странах СНГ                            
-                                </h4>
-                                <div class="glavnoe-item__description">
-                                    ИА Красная Весна 10:19                            
-                                </div>
-                            </div>
-                            <div class="line-sm"></div>
-                            <div class="glavnoe-item">
-                                <h4 class="glavnoe-item__header">
-                                    В Узбекистане увеличиваются очереди за автомобилями UzAuto                            
-                                </h4>
-                                <div class="glavnoe-item__description">
-                                    Северная газета (Армянск) 13:50                            
-                                </div>
-                            </div>
-                            <div class="line-sm"></div>
-                            <div class="glavnoe-item">
-                                <h4 class="glavnoe-item__header">
-                                    Минтуризма опровергло приостановку выплат за шаги                            
-                                </h4>
-                                <div class="glavnoe-item__description">
-                                    Sputnik Узбекистан 14:32                            
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="glavnoe-add">
-                            <!-- <img src="images/reklama/olmosAdd.png" srcset="images/reklama/olmosAdd.png 1x, images/reklama/olmosAdd@2x.png 2x" alt="Olmos add picture"> -->
-                        </div>
-                    </div>
+            <div class="glavnoe">
+              <div class="glavnoe-items">
+                <h2 class="section-header-glavnoe">Главное</h2>
+                <div class="glavnoe-item">
+                  <h4 class="glavnoe-item-header">
+                    В Фергане создадут узбекско-пакистанский университет
+                  </h4>
+                  <div class="glavnoe-item-description">
+                    Sputnik Узбекистан 14:09
+                  </div>
                 </div>
-            </section>
-        </main>
+                <div class="line-sm"></div>
+                <div class="glavnoe-item">
+                  <h4 class="glavnoe-item-header">
+                    Узбекистан утвердил соглашение о содействии занятости в
+                    странах СНГ
+                  </h4>
+                  <div class="glavnoe-item-description">
+                    ИА Красная Весна 10:19
+                  </div>
+                </div>
+                <div class="line-sm"></div>
+                <div class="glavnoe-item">
+                  <h4 class="glavnoe-item-header">
+                    В Узбекистане увеличиваются очереди за автомобилями UzAuto
+                  </h4>
+                  <div class="glavnoe-item-description">
+                    Северная газета (Армянск) 13:50
+                  </div>
+                </div>
+                <div class="line-sm"></div>
+                <div class="glavnoe-item">
+                  <h4 class="glavnoe-item-header">
+                    Минтуризма опровергло приостановку выплат за шаги
+                  </h4>
+                  <div class="glavnoe-item-description">
+                    Sputnik Узбекистан 14:32
+                  </div>
+                </div>
+              </div>
 
-        
+              <div class="glavnoe-add">
+                <!-- <img src="images/reklama/olmosAdd.png" srcset="images/reklama/olmosAdd.png 1x, images/reklama/olmosAdd@2x.png 2x" alt="Olmos add picture"> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    
+
     <footer class="footer" id="footer">
-        <div class="footer-top">
-            NAMANGANLIKLAR 24
+      <div class="footer-top">NAMANGANLIKLAR 24</div>
+      <div class="footer-body">
+        <div class="copyrigth">
+          Воспроизводство, копирование, использование информации с сайта
+          «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного
+          разрешения редакции.
         </div>
-        <div class="footer-body">
-            <div class="copyrigth">
-                Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
-            </div>
-            <div class="site-map">
-                <ul class="site-map__items">
-                    <li class="site-map__item">
-                        <a href="#" class="site-map__link">
-                            Информация о сайте
-                        </a>
-                    </li>
-                    <li class="site-map__item">
-                        <a href="#" class="site-map__link">
-                            Напишите нам                            
-                        </a>
-                    </li>
-                    <li class="site-map__item">
-                        <a href="#" class="site-map__link">
-                            Реклама                            </a>
-                    </li>
-                    <li class="site-map__item">
-                        <a href="#" class="site-map__link">
-                            Прислать новость
-                        </a>
-                    </li>
-                </ul>
+        <div class="site-map">
+          <ul class="site-map-items">
+            <li class="site-map-item">
+              <a href="#" class="site-map-link"> Информация о сайте </a>
+            </li>
+            <li class="site-map-item">
+              <a href="#" class="site-map-link"> Напишите нам </a>
+            </li>
+            <li class="site-map-item">
+              <a href="#" class="site-map-link"> Реклама </a>
+            </li>
+            <li class="site-map-item">
+              <a href="#" class="site-map-link"> Прислать новость </a>
+            </li>
+          </ul>
 
-                <ul class="site-map__items">
-                    <li class="site-map__item">
-                        <a href="#" class="site-map__link">
-                            Использование материалов
-                        </a>
-                    </li>
-                    <li class="site-map__item">
-                        <a href="#" class="site-map__link">
-                            Темы дня                           
-                        </a>
-                    </li>
-                    <li class="site-map__item">
-                        <a href="#" class="site-map__link">
-                            Наша команда
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+          <ul class="site-map-items">
+            <li class="site-map-item">
+              <a href="#" class="site-map-link"> Использование материалов </a>
+            </li>
+            <li class="site-map-item">
+              <a href="#" class="site-map-link"> Темы дня </a>
+            </li>
+            <li class="site-map-item">
+              <a href="#" class="site-map-link"> Наша команда </a>
+            </li>
+          </ul>
         </div>
-        <div class="line"></div>
-        <div class="footer-social">
-            <div class="footer-social__text">
-                <span>Наши</span>  
-                <span>социальные сети</span> 
-            </div>
-            <div class="line-foot"></div>
-            <div class="footer-social__items">
-                <div class="footer-social__item">
-                    <a href="#">
-                        <img src="images/icons/socialNetworks/facebook-icon.png" srcset="images/icons/socialNetworks/facebook-icon.png 1x, images/icons/socialNetworks/facebook-icon@2x.png 2x" alt="facebook-icon" />
-                    </a>
-                </div>
-                <div class="footer-social__item">
-                    <a href="#">
-                        <img src="images/icons/socialNetworks/instagram-icon.png" srcset="images/icons/socialNetworks/instagram-icon.png 1x, images/icons/socialNetworks/instagram-icon@2x.png 2x" alt="instagram-icon" />
-                    </a>
-                </div>
-                <div class="footer-social__item">
-                    <a href="#">
-                        <img src="images/icons/socialNetworks/telegram-icon.png" srcset="images/icons/socialNetworks/telegram-icon.png 1x, images/icons/socialNetworks/telegram-icon@2x.png 2x" alt="telegram-icon" />
-                    </a>
-                </div>
-                <div class="footer-social__item">
-                    <a href="#">
-                        <img src="images/icons/socialNetworks/youtube-icon.png" srcset="images/icons/socialNetworks/youtube-icon.png 1x, images/icons/socialNetworks/youtube-icon@2x.png 2x" alt="youtube-icon" />
-                    </a>
-                </div>
-            </div>
+      </div>
+      <div class="line"></div>
+      <div class="footer-social">
+        <div class="footer-social-text">
+          <span>Наши</span>
+          <span>социальные сети</span>
         </div>
-    </footer>   
+        <div class="line-foot"></div>
+        <div class="footer-social-items">
+          <div class="footer-social-item">
+            <a href="#">
+              <img
+                src="images/icons/socialNetworks/facebook-icon.png"
+                srcset="
+                  images/icons/socialNetworks/facebook-icon.png    1x,
+                  images/icons/socialNetworks/facebook-icon@2x.png 2x
+                "
+                alt="facebook-icon"
+              />
+            </a>
+          </div>
+          <div class="footer-social-item">
+            <a href="#">
+              <img
+                src="images/icons/socialNetworks/instagram-icon.png"
+                srcset="
+                  images/icons/socialNetworks/instagram-icon.png    1x,
+                  images/icons/socialNetworks/instagram-icon@2x.png 2x
+                "
+                alt="instagram-icon"
+              />
+            </a>
+          </div>
+          <div class="footer-social-item">
+            <a href="#">
+              <img
+                src="images/icons/socialNetworks/telegram-icon.png"
+                srcset="
+                  images/icons/socialNetworks/telegram-icon.png    1x,
+                  images/icons/socialNetworks/telegram-icon@2x.png 2x
+                "
+                alt="telegram-icon"
+              />
+            </a>
+          </div>
+          <div class="footer-social-item">
+            <a href="#">
+              <img
+                src="images/icons/socialNetworks/youtube-icon.png"
+                srcset="
+                  images/icons/socialNetworks/youtube-icon.png    1x,
+                  images/icons/socialNetworks/youtube-icon@2x.png 2x
+                "
+                alt="youtube-icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- FOOTER NAVBAR -->
-    <section class="footer-nav">
-            <a href="index.html" class="footer-nav__link active-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="32px" height="32px">
-                    <path d="M24.963 1.055a1 1 0 0 0-.578.209l-23 17.947a1 1 0 0 0 1.23 1.578L4 19.71V46a1 1 0 0 0 1 1h13.832a1 1 0 0 0 .326 0h11.674a1 1 0 0 0 .326 0H45a1 1 0 0 0 1-1V19.709l1.385 1.08a1 1 0 1 0 1.23-1.578L41 13.27V6h-6v2.586l-9.385-7.322a1 1 0 0 0-.652-.21zM25 3.322l19 14.826V45H32V26H18v19H6V18.148L25 3.322zM37 8h2v3.709l-2-1.563V8zM20 28h10v17H20V28z"/>
-                </svg>
-            </a>
-            <a href="index.html" class="footer-nav__link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="32px" height="32px">
-                    <path d="M21 3C11.621 3 4 10.621 4 20s7.621 17 17 17c3.71 0 7.14-1.195 9.938-3.219l13.156 13.125 2.812-2.812-13-13.032A16.923 16.923 0 0 0 38 20c0-9.379-7.621-17-17-17Zm0 2c8.297 0 15 6.703 15 15s-6.703 15-15 15S6 28.297 6 20 12.703 5 21 5Z"/>
-                </svg>
-            </a>
-            <a href="index.html" class="footer-nav__link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="32px" height="32px">
-                    <path d="M1.719 2.781a1.002 1.002 0 0 0-.782 1V39.47c0 4.246 2.208 6.64 4.375 7.718 2.168 1.079 4.313 1.032 4.313 1.032h30.75v-.094c.48.055 1 .094 1 .094s1.922.011 3.844-1.094c1.875-1.078 3.722-3.36 3.812-7.313a.466.466 0 0 0 .032-.062v-.063c.003-.05.003-.105 0-.156V14.406s.015-1.172-.594-2.375c-.61-1.203-2.028-2.5-4.25-2.5V9.5H34.75v2h5.563A4.376 4.376 0 0 0 40 12c-.61 1.191-.625 2.375-.625 2.375v24.25c-.004.36.184.695.496.879.313.18.695.18 1.008 0 .312-.184.5-.52.496-.879v-24.25c0-.027.04-.75.406-1.469.375-.73.903-1.375 2.438-1.375 1.531 0 2.058.66 2.437 1.406.371.735.438 1.473.438 1.5h-.032v25.094c0 3.559-1.421 5.059-2.843 5.875-1.422.817-2.844.813-2.844.813s-1.691-.024-3.375-.875c-1.684-.852-3.313-2.348-3.313-5.875V3.78c0-.55-.449-1-1-1H1.938a1.024 1.024 0 0 0-.218 0Zm1.218 2h29.75V39.47c0 3.289 1.395 5.441 3.032 6.75H9.594s-.43.004-1.063-.094a8.47 8.47 0 0 1-1.062-.25 7.835 7.835 0 0 1-1.25-.469 6.983 6.983 0 0 1-.625-.343c-1.43-.899-2.657-2.45-2.657-5.594Zm4 6.219c-.55.078-.937.59-.859 1.14.078.551.59.938 1.14.86h19.72c.359.004.695-.184.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-20Zm0 4c-.55.078-.937.59-.859 1.14.078.551.59.938 1.14.86h19.72c.359.004.695-.184.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-20Zm.47 8c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Zm11.53 0c-.55.078-.937.59-.859 1.14.078.551.59.938 1.14.86h7.72c.359.004.695-.184.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-8Zm-11.53 4c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Zm11.53 0c-.55.078-.937.59-.859 1.14.078.551.59.938 1.14.86h7.72c.359.004.695-.184.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-8Zm0 3.781c-.55.078-.937.59-.859 1.14.078.552.59.938 1.14.86h7.72c.359.004.695-.183.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-7.72a.753.753 0 0 0-.187 0h-.093ZM7.408 31c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Zm11.53 3.781c-.55.078-.937.59-.859 1.14.078.552.59.938 1.14.86h7.72c.359.004.695-.183.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-7.72a.753.753 0 0 0-.187 0h-.093ZM7.408 35c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Zm11.53 3.531c-.55.078-.937.59-.859 1.14.078.552.59.938 1.14.86h7.72c.359.004.695-.183.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-8ZM7.408 39c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Z"/>
-                </svg>
-            </a>
-            <a href="index.html" class="footer-nav__link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="32px" height="32px">
-                    <path d="M26.563 1c-3.926 0-7.157 3.133-7.157 7 0 1.734.664 3.074 1.719 4.563.86 1.214.813 1.87.719 2.062-.094.191-.446.438-1.375.375-2.43-.164-10.219-1.063-10.219-1.063v.032c-.941-.13-1.883.273-2.375.937-.477.645-.656 1.403-.75 2.188v.062c-.004.024-.027.04-.031.063h.031c-.012.043-.434 1.988-1.063 10.25-.007.129-.019.027-.03.156h.03c-.05.387-.007.734 0 .781.125.637.477 1.27 1.063 1.563.586.293 1.18.215 1.688.062 1.019-.304 1.98-.984 2.968-1.687C12.95 27.516 14.047 27 15.312 27c2.872 0 5.157 2.238 5.157 5s-2.285 5-5.157 5c-1.425 0-2.234-.367-3.593-1.438-.758-.593-1.645-1.238-2.594-1.593-.477-.176-.984-.282-1.563-.157-.578.126-1.136.602-1.375 1.188-.246.602-.234 1.023-.156 1.531.004.051-.004.012 0 .063.59 6.12.887 6.718 1.094 7.625.148.648.414 1.308.906 1.843.492.536 1.27.938 2.125.938h32.032c1.113 0 2.12-.367 2.812-1.063.691-.695 1-1.66 1-2.687V17.375c0-.96-.355-1.781-.906-2.344-.551-.562-1.23-.87-1.875-1.062a1.012 1.012 0 0 0-.375-.031s-7.528.746-10.25 1.062c-.793.09-1.067-.086-1.188-.344-.12-.258-.172-.988.563-2.156.554-.883.98-1.527 1.281-2.219.3-.691.438-1.418.438-2.281 0-3.867-3.2-7-7.126-7Zm0 2c2.87 0 5.125 2.238 5.125 5 0 .664-.079 1.035-.282 1.5-.203.465-.566 1.047-1.125 1.938-.937 1.492-1.234 2.906-.687 4.062.547 1.156 1.886 1.652 3.218 1.5 2.586-.3 9.575-.992 9.97-1.031.39.133.734.261.906.437.195.2.312.418.312.969V43.25c0 .629-.176 1.016-.438 1.281-.261.266-.66.469-1.374.469H10.156c-.277 0-.433-.07-.625-.281a2.251 2.251 0 0 1-.469-.938c-.257-1.117-.433-1.218-1.03-7.437A.466.466 0 0 0 8 36.28c-.02-.11.082-.656.031-.531.035 0 .168.004.406.094.543.203 1.344.77 2.032 1.312C12 38.36 13.473 39 15.313 39c3.925 0 7.156-3.133 7.156-7s-3.23-7-7.157-7c-1.824 0-3.359.773-4.687 1.719-.95.676-1.883 1.258-2.375 1.406-.094.027-.14.027-.188.031-.003-.027-.011-.035-.03-.125-.012-.062 0-.11 0-.125a.668.668 0 0 0 0-.125c.648-8.648 1.03-10.218 1.03-10.218.012-.04.024-.083.032-.125.07-.649.23-1.145.375-1.344.144-.2.117-.219.5-.157h.062s7.692.887 10.313 1.063c1.375.094 2.734-.316 3.312-1.5.578-1.184.157-2.59-.906-4.094-.98-1.383-1.344-2.133-1.344-3.406 0-2.762 2.285-5 5.157-5Z"/>
-                </svg>
-            </a>
-            <a href="index.html" class="footer-nav__link">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="32px" height="32px">
-                <path d="M24.875 3.313c-4.691.105-7.66 2.003-8.938 4.937-1.214 2.793-.96 6.313-.093 9.969-.465.547-.848 1.316-.75 2.468v.063c.168 1.219.535 2.078 1 2.688.222.289.539.304.812.468a11.003 11.003 0 0 0 1.407 3.688.991.991 0 0 0 .187.406s.102.129.125.156c.313.469.469 1.121.469 1.844 0 .77-.012 1.484-.094 2.281-.3.758-1.05 1.364-2.25 1.969-1.254.633-2.895 1.215-4.563 1.938-1.667.722-3.359 1.59-4.718 2.968-1.36 1.38-2.332 3.29-2.469 5.782L4.937 46h40.126L45 44.937c-.137-2.492-1.086-4.398-2.438-5.78-1.351-1.384-3.05-2.247-4.718-2.97-1.668-.722-3.32-1.3-4.594-1.937-1.234-.617-2.008-1.246-2.344-2.031a28.82 28.82 0 0 1-.093-2.532c0-.535.183-1.019.5-1.5.007-.011.023-.019.03-.03a.98.98 0 0 0 .313-.531c.606-1.04 1.11-2.36 1.344-3.689.313-.164.664-.183.906-.5.48-.628.762-1.523.875-2.75.09-1.058-.215-1.828-.687-2.406.52-1.601 1.136-4.164.937-6.781-.11-1.438-.488-2.871-1.343-4.063-.774-1.078-2.024-1.816-3.594-2.156-1.059-1.414-2.98-1.968-5.188-1.968Zm.031 2h.032c1.996.007 3.273.57 3.687 1.28l.25.438.5.063c1.375.191 2.129.722 2.688 1.5.558.777.878 1.863.968 3.062.184 2.403-.511 5.219-.968 6.5L31.75 19l.781.406c-.008.028.32.36.282 1.094v.031c-.094.942-.336 1.473-.5 1.688-.168.218-.254.187-.22.187h-.874l-.125.875c-.172 1.297-.832 2.93-1.407 3.75h-.03c-.06.086-.102.188-.157.282a11.25 11.25 0 0 1-1.219 1.187C27.348 29.297 26.11 30 25 30c-1.102 0-2.352-.738-3.313-1.563-.832-.714-1.328-1.328-1.468-1.5-.004-.007.004-.023 0-.03-.59-.852-1.266-2.345-1.438-3.626l-.093-.875h-.813a.58.58 0 0 1-.219-.187c-.176-.23-.426-.77-.562-1.688V20.5c-.004-.016.004-.016 0-.031-.016-.758.453-1.18.375-1.125l.562-.407-.156-.687c-.922-3.645-1.066-6.945-.094-9.188.973-2.234 2.942-3.648 7.125-3.75ZM21.094 30.53C22.148 31.31 23.469 32 25 32c1.5 0 2.785-.656 3.813-1.406.003.61.023 1.234.093 2v.125l.063.125c.176.46.426.851.718 1.218-.011.04-.023.083-.03.126 0 0-.239.656-.938 1.374-.7.72-1.785 1.438-3.719 1.438-1.926 0-3.05-.75-3.781-1.5-.73-.75-.969-1.438-.969-1.438.29-.374.527-.777.688-1.25l.062-.187c.086-.758.094-1.441.094-2.094Zm10.156 4.907c.352.226.715.437 1.094.624 1.46.727 3.117 1.29 4.687 1.97 1.57.679 3.035 1.448 4.094 2.53.844.864 1.352 2.012 1.625 3.438H7.25c.273-1.426.777-2.574 1.625-3.438 1.063-1.082 2.555-1.851 4.125-2.53 1.57-.68 3.21-1.239 4.656-1.97.36-.183.727-.374 1.063-.593a6.83 6.83 0 0 0 1.062 1.437C20.801 37.957 22.527 39 25 39c2.465 0 4.156-1.031 5.156-2.063a6.285 6.285 0 0 0 1.094-1.5Z"/>
-            </svg>
-            </a>
-    </section>
-
-
+    <div class="footer-nav">
+      <a href="index.html" class="footer-nav-link active-link">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 70 70"
+          width="32px"
+          height="32px"
+        >
+          <path
+            d="M24.963 1.055a1 1 0 0 0-.578.209l-23 17.947a1 1 0 0 0 1.23 1.578L4 19.71V46a1 1 0 0 0 1 1h13.832a1 1 0 0 0 .326 0h11.674a1 1 0 0 0 .326 0H45a1 1 0 0 0 1-1V19.709l1.385 1.08a1 1 0 1 0 1.23-1.578L41 13.27V6h-6v2.586l-9.385-7.322a1 1 0 0 0-.652-.21zM25 3.322l19 14.826V45H32V26H18v19H6V18.148L25 3.322zM37 8h2v3.709l-2-1.563V8zM20 28h10v17H20V28z"
+          />
+        </svg>
+      </a>
+      <a href="index.html" class="footer-nav-link">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 70 70"
+          width="32px"
+          height="32px"
+        >
+          <path
+            d="M21 3C11.621 3 4 10.621 4 20s7.621 17 17 17c3.71 0 7.14-1.195 9.938-3.219l13.156 13.125 2.812-2.812-13-13.032A16.923 16.923 0 0 0 38 20c0-9.379-7.621-17-17-17Zm0 2c8.297 0 15 6.703 15 15s-6.703 15-15 15S6 28.297 6 20 12.703 5 21 5Z"
+          />
+        </svg>
+      </a>
+      <a href="index.html" class="footer-nav-link">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 70 70"
+          width="32px"
+          height="32px"
+        >
+          <path
+            d="M1.719 2.781a1.002 1.002 0 0 0-.782 1V39.47c0 4.246 2.208 6.64 4.375 7.718 2.168 1.079 4.313 1.032 4.313 1.032h30.75v-.094c.48.055 1 .094 1 .094s1.922.011 3.844-1.094c1.875-1.078 3.722-3.36 3.812-7.313a.466.466 0 0 0 .032-.062v-.063c.003-.05.003-.105 0-.156V14.406s.015-1.172-.594-2.375c-.61-1.203-2.028-2.5-4.25-2.5V9.5H34.75v2h5.563A4.376 4.376 0 0 0 40 12c-.61 1.191-.625 2.375-.625 2.375v24.25c-.004.36.184.695.496.879.313.18.695.18 1.008 0 .312-.184.5-.52.496-.879v-24.25c0-.027.04-.75.406-1.469.375-.73.903-1.375 2.438-1.375 1.531 0 2.058.66 2.437 1.406.371.735.438 1.473.438 1.5h-.032v25.094c0 3.559-1.421 5.059-2.843 5.875-1.422.817-2.844.813-2.844.813s-1.691-.024-3.375-.875c-1.684-.852-3.313-2.348-3.313-5.875V3.78c0-.55-.449-1-1-1H1.938a1.024 1.024 0 0 0-.218 0Zm1.218 2h29.75V39.47c0 3.289 1.395 5.441 3.032 6.75H9.594s-.43.004-1.063-.094a8.47 8.47 0 0 1-1.062-.25 7.835 7.835 0 0 1-1.25-.469 6.983 6.983 0 0 1-.625-.343c-1.43-.899-2.657-2.45-2.657-5.594Zm4 6.219c-.55.078-.937.59-.859 1.14.078.551.59.938 1.14.86h19.72c.359.004.695-.184.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-20Zm0 4c-.55.078-.937.59-.859 1.14.078.551.59.938 1.14.86h19.72c.359.004.695-.184.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-20Zm.47 8c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Zm11.53 0c-.55.078-.937.59-.859 1.14.078.551.59.938 1.14.86h7.72c.359.004.695-.184.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-8Zm-11.53 4c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Zm11.53 0c-.55.078-.937.59-.859 1.14.078.551.59.938 1.14.86h7.72c.359.004.695-.184.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-8Zm0 3.781c-.55.078-.937.59-.859 1.14.078.552.59.938 1.14.86h7.72c.359.004.695-.183.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-7.72a.753.753 0 0 0-.187 0h-.093ZM7.408 31c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Zm11.53 3.781c-.55.078-.937.59-.859 1.14.078.552.59.938 1.14.86h7.72c.359.004.695-.183.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-7.72a.753.753 0 0 0-.187 0h-.093ZM7.408 35c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Zm11.53 3.531c-.55.078-.937.59-.859 1.14.078.552.59.938 1.14.86h7.72c.359.004.695-.183.878-.496a1.01 1.01 0 0 0 0-1.008c-.183-.312-.52-.5-.878-.496h-8ZM7.408 39c-.552.078-.938.59-.86 1.14.078.551.59.938 1.14.86h6.782c.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496H7.407Z"
+          />
+        </svg>
+      </a>
+      <a href="index.html" class="footer-nav-link">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 70 70"
+          width="32px"
+          height="32px"
+        >
+          <path
+            d="M26.563 1c-3.926 0-7.157 3.133-7.157 7 0 1.734.664 3.074 1.719 4.563.86 1.214.813 1.87.719 2.062-.094.191-.446.438-1.375.375-2.43-.164-10.219-1.063-10.219-1.063v.032c-.941-.13-1.883.273-2.375.937-.477.645-.656 1.403-.75 2.188v.062c-.004.024-.027.04-.031.063h.031c-.012.043-.434 1.988-1.063 10.25-.007.129-.019.027-.03.156h.03c-.05.387-.007.734 0 .781.125.637.477 1.27 1.063 1.563.586.293 1.18.215 1.688.062 1.019-.304 1.98-.984 2.968-1.687C12.95 27.516 14.047 27 15.312 27c2.872 0 5.157 2.238 5.157 5s-2.285 5-5.157 5c-1.425 0-2.234-.367-3.593-1.438-.758-.593-1.645-1.238-2.594-1.593-.477-.176-.984-.282-1.563-.157-.578.126-1.136.602-1.375 1.188-.246.602-.234 1.023-.156 1.531.004.051-.004.012 0 .063.59 6.12.887 6.718 1.094 7.625.148.648.414 1.308.906 1.843.492.536 1.27.938 2.125.938h32.032c1.113 0 2.12-.367 2.812-1.063.691-.695 1-1.66 1-2.687V17.375c0-.96-.355-1.781-.906-2.344-.551-.562-1.23-.87-1.875-1.062a1.012 1.012 0 0 0-.375-.031s-7.528.746-10.25 1.062c-.793.09-1.067-.086-1.188-.344-.12-.258-.172-.988.563-2.156.554-.883.98-1.527 1.281-2.219.3-.691.438-1.418.438-2.281 0-3.867-3.2-7-7.126-7Zm0 2c2.87 0 5.125 2.238 5.125 5 0 .664-.079 1.035-.282 1.5-.203.465-.566 1.047-1.125 1.938-.937 1.492-1.234 2.906-.687 4.062.547 1.156 1.886 1.652 3.218 1.5 2.586-.3 9.575-.992 9.97-1.031.39.133.734.261.906.437.195.2.312.418.312.969V43.25c0 .629-.176 1.016-.438 1.281-.261.266-.66.469-1.374.469H10.156c-.277 0-.433-.07-.625-.281a2.251 2.251 0 0 1-.469-.938c-.257-1.117-.433-1.218-1.03-7.437A.466.466 0 0 0 8 36.28c-.02-.11.082-.656.031-.531.035 0 .168.004.406.094.543.203 1.344.77 2.032 1.312C12 38.36 13.473 39 15.313 39c3.925 0 7.156-3.133 7.156-7s-3.23-7-7.157-7c-1.824 0-3.359.773-4.687 1.719-.95.676-1.883 1.258-2.375 1.406-.094.027-.14.027-.188.031-.003-.027-.011-.035-.03-.125-.012-.062 0-.11 0-.125a.668.668 0 0 0 0-.125c.648-8.648 1.03-10.218 1.03-10.218.012-.04.024-.083.032-.125.07-.649.23-1.145.375-1.344.144-.2.117-.219.5-.157h.062s7.692.887 10.313 1.063c1.375.094 2.734-.316 3.312-1.5.578-1.184.157-2.59-.906-4.094-.98-1.383-1.344-2.133-1.344-3.406 0-2.762 2.285-5 5.157-5Z"
+          />
+        </svg>
+      </a>
+      <a href="index.html" class="footer-nav-link">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 70 70"
+          width="32px"
+          height="32px"
+        >
+          <path
+            d="M24.875 3.313c-4.691.105-7.66 2.003-8.938 4.937-1.214 2.793-.96 6.313-.093 9.969-.465.547-.848 1.316-.75 2.468v.063c.168 1.219.535 2.078 1 2.688.222.289.539.304.812.468a11.003 11.003 0 0 0 1.407 3.688.991.991 0 0 0 .187.406s.102.129.125.156c.313.469.469 1.121.469 1.844 0 .77-.012 1.484-.094 2.281-.3.758-1.05 1.364-2.25 1.969-1.254.633-2.895 1.215-4.563 1.938-1.667.722-3.359 1.59-4.718 2.968-1.36 1.38-2.332 3.29-2.469 5.782L4.937 46h40.126L45 44.937c-.137-2.492-1.086-4.398-2.438-5.78-1.351-1.384-3.05-2.247-4.718-2.97-1.668-.722-3.32-1.3-4.594-1.937-1.234-.617-2.008-1.246-2.344-2.031a28.82 28.82 0 0 1-.093-2.532c0-.535.183-1.019.5-1.5.007-.011.023-.019.03-.03a.98.98 0 0 0 .313-.531c.606-1.04 1.11-2.36 1.344-3.689.313-.164.664-.183.906-.5.48-.628.762-1.523.875-2.75.09-1.058-.215-1.828-.687-2.406.52-1.601 1.136-4.164.937-6.781-.11-1.438-.488-2.871-1.343-4.063-.774-1.078-2.024-1.816-3.594-2.156-1.059-1.414-2.98-1.968-5.188-1.968Zm.031 2h.032c1.996.007 3.273.57 3.687 1.28l.25.438.5.063c1.375.191 2.129.722 2.688 1.5.558.777.878 1.863.968 3.062.184 2.403-.511 5.219-.968 6.5L31.75 19l.781.406c-.008.028.32.36.282 1.094v.031c-.094.942-.336 1.473-.5 1.688-.168.218-.254.187-.22.187h-.874l-.125.875c-.172 1.297-.832 2.93-1.407 3.75h-.03c-.06.086-.102.188-.157.282a11.25 11.25 0 0 1-1.219 1.187C27.348 29.297 26.11 30 25 30c-1.102 0-2.352-.738-3.313-1.563-.832-.714-1.328-1.328-1.468-1.5-.004-.007.004-.023 0-.03-.59-.852-1.266-2.345-1.438-3.626l-.093-.875h-.813a.58.58 0 0 1-.219-.187c-.176-.23-.426-.77-.562-1.688V20.5c-.004-.016.004-.016 0-.031-.016-.758.453-1.18.375-1.125l.562-.407-.156-.687c-.922-3.645-1.066-6.945-.094-9.188.973-2.234 2.942-3.648 7.125-3.75ZM21.094 30.53C22.148 31.31 23.469 32 25 32c1.5 0 2.785-.656 3.813-1.406.003.61.023 1.234.093 2v.125l.063.125c.176.46.426.851.718 1.218-.011.04-.023.083-.03.126 0 0-.239.656-.938 1.374-.7.72-1.785 1.438-3.719 1.438-1.926 0-3.05-.75-3.781-1.5-.73-.75-.969-1.438-.969-1.438.29-.374.527-.777.688-1.25l.062-.187c.086-.758.094-1.441.094-2.094Zm10.156 4.907c.352.226.715.437 1.094.624 1.46.727 3.117 1.29 4.687 1.97 1.57.679 3.035 1.448 4.094 2.53.844.864 1.352 2.012 1.625 3.438H7.25c.273-1.426.777-2.574 1.625-3.438 1.063-1.082 2.555-1.851 4.125-2.53 1.57-.68 3.21-1.239 4.656-1.97.36-.183.727-.374 1.063-.593a6.83 6.83 0 0 0 1.062 1.437C20.801 37.957 22.527 39 25 39c2.465 0 4.156-1.031 5.156-2.063a6.285 6.285 0 0 0 1.094-1.5Z"
+          />
+        </svg>
+      </a>
+    </div>
 
     <!-- SCRIPT LINKS -->
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

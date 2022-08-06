@@ -10,7 +10,7 @@ const navBottom = document.querySelector('.nav-bottom');
 const navTopRight = document.querySelector('.nav-top__right');
 const navTopLeft = document.querySelector('.nav-top__left');
 const hamburgerIcon = document.querySelector('.hamburgerIcon');
-const footerNavLinks = document.querySelectorAll('.footer-nav__link');
+const footerNavLinks = document.querySelectorAll('.footer-nav-link');
 
 if (window.screen.availWidth < 1100){
     search.addEventListener('click', () => {
