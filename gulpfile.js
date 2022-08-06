@@ -27,4 +27,5 @@ gulp.task('watch', async function () {
     gulp.watch('source/styles/**/*.css', gulp.series('styles'))
 })
 
+
 gulp.task('default', gulp.series('styles', 'scripts', 'watch'))
