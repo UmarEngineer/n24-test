@@ -435,13 +435,16 @@ main{
     display: none;
 }
 
+/* FOOTER FOR MOBILE DEVICES */
+
 .footer-nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px 0;
-    /* border-top: 1px solid #333; */
     box-shadow: -1px 0 2px #333;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 .active-link{
@@ -703,6 +706,14 @@ main{
     /* ODATDA XABARLAR SAYTIDA MOBIL QISMI UCHUN FOOTER KO'RINMAYDI SHUNING UCHUN OLIB QO'YILDI  */
     .footer{
         display: none;
+    }
+
+    .footer-nav{
+        display: flex;
+        position: fixed;
+        top: 91%;
+        right: 0;
+        left: 0;
     }
 
     

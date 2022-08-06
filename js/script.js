@@ -54,7 +54,6 @@ if(window.screen.availWidth < 590){
     navTopRight.style.paddingTop = '20px'  
 }
 
-console.log(footerNavLinks);
 
 let activeButton = footerNavLinks[0]
 footerNavLinks.forEach(footerNavLink => {
