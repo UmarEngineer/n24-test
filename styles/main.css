@@ -711,9 +711,10 @@ main{
     .footer-nav{
         display: flex;
         position: fixed;
-        top: 91%;
+        /* top: 91%; */
         right: 0;
         left: 0;
+        bottom: -10px;
     }
 
     
